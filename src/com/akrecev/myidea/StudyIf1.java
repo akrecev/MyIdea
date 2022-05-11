@@ -32,10 +32,12 @@ public class StudyIf1 {
                 } else if (action.equals("/")) {
                     result = a / b;
                     System.out.println("Результат вычисления a / b = " + result);
+                } else if (action.equalsIgnoreCase("q")) {
+                    System.out.println("Программа закрыта");
+                    return;
                 } else {
                     System.out.println("Внимательно следуйте инструкциям! Нужно ввести действие,"
                             + " которое неоходимо совершить с числами (+, -, *, /). Программа закрыта.");
-                    console.close();
                     return;
                 }
 
@@ -57,10 +59,12 @@ public class StudyIf1 {
                     } else if (action.equals("/")) {
                         result2 = result / c;
                         System.out.println("Результат вычисления: " + result2);
+                    } else if (action.equalsIgnoreCase("q")) {
+                        System.out.println("Программа закрыта");
+                        return;
                     } else {
                         System.out.println("Внимательно следуйте инструкциям! Нужно ввести действие,"
                                 + " которое неоходимо совершить с числами (+, -, *, /). Программа закрыта.");
-                        console.close();
                         return;
                     }
 
@@ -82,10 +86,12 @@ public class StudyIf1 {
                         } else if (action.equals("/")) {
                             result3 = result2 / d;
                             System.out.println("Результат вычисления: " + result3);
+                        } else if (action.equalsIgnoreCase("q")) {
+                            System.out.println("Программа закрыта");
+                            return;
                         } else {
                             System.out.println("Внимательно следуйте инструкциям! Нужно ввести действие,"
                                     + " которое неоходимо совершить с числами (+, -, *, /). Программа закрыта.");
-                            console.close();
                             return;
                         }
                     }
